@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  # ... (app, shared, api services) ...
+
+  # Database service
+  db:
+    image: postgres:14-debian
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+
+  # Development tools
+  dev-tools:
+    build:
+      context: .
+      dockerfile: ./apps/dev-container/Dockerfile  # Create a new Dockerfile in ./packages/dev-tools 
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    command: ["bash", "-c", "apt-get update && apt-get install -y libicu-dev && bash"]
+
+volumes:
+  # Database volume
+  db-data:

@@ -1,0 +1,43 @@
+/* product-list.css */
+
+.ProductList {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ProductList h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ProductList ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.ProductList li {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center; /* Center content within each product card */
+}
+
+.ProductList img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ProductList h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.ProductList p {
+  color: #555;
+  margin-bottom: 10px;
+}

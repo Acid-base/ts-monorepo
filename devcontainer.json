@@ -1,0 +1,23 @@
+{
+  "name": "ts-monorepo-devcontainer",
+  "image": "your-docker-image-name:latest",  // Replace with your image name
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/postgres-asdf:1": {
+      "version": "16.3" //  Install PostgreSQL 16.3
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.typescript-language-features",
+        "ms-vscode.vscode-typescript",
+        "ms-vscode.cpptools",
+        "prisma.prisma",
+        "pflannery.vscode-pnpm"
+      ]
+    }
+  },
+  "postCreateCommand": "pnpm install && pnpm prisma generate"
+}
