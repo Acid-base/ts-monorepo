@@ -2,6 +2,7 @@
   "name": "ts-monorepo",
   "description": "Template for setting up a TypeScript monorepo",
   "private": true,
+
   "workspaces": [
     "packages/*",
     "apps/*"
@@ -12,6 +13,7 @@
     "build": "pnpm run -r build",
     "test": "pnpm run -r test",
     "lint": "eslint --ext js,ts,tsx ."
+    
   },
   "devDependencies": {
     "@nighttrax/eslint-config-tsx": "~12.0.0-alpha.2",
@@ -19,5 +21,9 @@
     "eslint": "~8.57.0",
     "eslint-plugin-import": "~2.29.0",
     "typescript": "~4.9.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "mongoose": "^8.5.2"
   }
 }
