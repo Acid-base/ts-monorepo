@@ -1,0 +1,52 @@
+/* cart.css */
+
+.Cart {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Cart h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.Cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Cart li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items */
+  align-items: center; /* Align items vertically */
+}
+
+.Cart li h3 {
+  margin: 0;
+  font-size: 1.1rem; /* Make product titles slightly larger */
+}
+
+.cart-total {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.Cart button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

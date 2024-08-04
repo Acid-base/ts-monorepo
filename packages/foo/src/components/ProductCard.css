@@ -1,0 +1,38 @@
+/* product-card.css */
+
+.ProductCard {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ProductCard img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ProductCard h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.ProductCard p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.ProductCard button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
